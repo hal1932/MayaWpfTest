@@ -33,7 +33,7 @@ def createInstance(className):
     sendResult(str(key))
 
 
-## C# 側に結果を返す、実践では MessagePack 等を利用することを想定
+## C# 側に結果を返す、実践では文字列化する前に受け取って MessagePack 等でパッキングすることを想定
 def sendResult(result):
     global conn
 
